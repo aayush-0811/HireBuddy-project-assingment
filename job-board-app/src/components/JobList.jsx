@@ -14,7 +14,7 @@ const JobList = () => {
 
   const fetchJobs = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/jobs', {
+      const res = await axios.get('https://hirebuddy-project-assingment-3.onrender.com/api/jobs', {
         params: {
           title: searchTitle,
           location,
