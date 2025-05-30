@@ -63,7 +63,7 @@ export default function ResumeUpload() {
       const formData = new FormData();
       formData.append('resume', selectedFile);
 
-      const response = await fetch('http://localhost:5000/api/upload-resume', {
+      const response = await fetch('https://hirebuddy-project-assingment-3.onrender.com/api/upload-resume', {
         method: 'POST',
         body: formData,
       });
