@@ -29,7 +29,7 @@ export default function Results() {
   const debouncedLocation = useDebounce(filters.location, 500);
   const debouncedCompany = useDebounce(filters.company, 500);
 
-  const apiUrl = "http://localhost:5000/api/jobs";
+  const apiUrl = "https://hirebuddy-project-assingment-3.onrender.com/api/jobs";
 
   const queryString = useMemo(() => {
     const params = new URLSearchParams();
